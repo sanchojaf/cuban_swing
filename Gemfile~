@@ -1,0 +1,55 @@
+source 'https://rubygems.org'
+
+gem 'rails', '3.2.14'
+
+# Bundle edge Rails instead:
+# gem 'rails', :git => 'git://github.com/rails/rails.git'
+
+gem 'sqlite3'
+
+
+# Gems used only for assets and not required
+# in production environments by default.
+group :assets do
+  gem 'sass-rails',   '~> 3.2.3'
+  gem 'coffee-rails', '~> 3.2.1'
+  #gem 'execjs', '2.0.0'
+  gem 'therubyracer', :platforms => :ruby
+
+  gem 'uglifier', '>= 1.0.3'
+end
+
+gem 'jquery-rails'
+
+# To use ActiveModel has_secure_password
+# gem 'bcrypt-ruby', '~> 3.0.0'
+
+# To use Jbuilder templates for JSON
+# gem 'jbuilder'
+
+# Use unicorn as the app server
+# gem 'unicorn'
+
+# Deploy with Capistrano
+# gem 'capistrano'
+
+# To use debugger
+# gem 'debugger'
+
+gem 'spree', :github => 'spree/spree', :branch => '2-0-stable'
+gem 'spree_auth_devise', :github => 'spree/spree_auth_devise', :branch => '2-0-stable'
+gem 'spree_related_products', :github => 'spree/spree_related_products', :branch => '2-0-stable'
+gem 'spree_bootstrap', :github => 'jdutil/spree_bootstrap', :branch => '2-0-stable'
+
+
+#SPREE_TRAVEL_GEMS
+gem 'spree_property_type',  :github => "openjaf/spree_property_type"
+gem 'spree_multi_types',  :github => "openjaf/spree_multi_types"
+gem 'spree_context',  :github => "openjaf/spree_context"
+gem 'spree_rate',  :github => "openjaf/spree_rate"
+gem 'spree_location',  :github => "openjaf/spree_location"
+gem 'spree_travel_core',  :github => "openjaf/spree_travel_core"
+gem 'spree_travel_product',  :github => "openjaf/spree_travel_product"
+
+
+
